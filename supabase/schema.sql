@@ -1,0 +1,8 @@
+-- HMS Pro live schema notes
+-- Initial schema deployed: hostels, hostel_members, rooms, residents,
+-- meal_entries and transactions, with RLS and role helper functions.
+-- Additional migration deployed: inventory_items with 4 RLS policies,
+-- one meal entry per resident per day, and unique room codes per hostel.
+-- Project ref: jgoshzbxszpslwqbxine
+-- Do not run old Phase 1 draft schema against this project.
+-- Canonical schema/migrations are maintained in Supabase Dashboard > Database > Migrations.
