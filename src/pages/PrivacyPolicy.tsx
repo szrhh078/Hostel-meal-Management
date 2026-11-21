@@ -181,7 +181,7 @@ export default function PrivacyPolicy() {
         <p><strong>Website:</strong> https://hms-pro.shop</p>
         <p>
           <strong>Support email:</strong>{' '}
-          REPLACE_WITH_YOUR_REAL_SUPPORT_EMAIL
+          szbhh8775@gmail.com
         </p>
 
         <hr />
