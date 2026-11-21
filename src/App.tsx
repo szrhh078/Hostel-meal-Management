@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState, type FormEvent } from 'react';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import Sidebar, { type Page } from './components/Sidebar';
 import Topbar from './components/Topbar';
 import Overview from './pages/Overview';
@@ -262,4 +263,16 @@ function Workspace() {
     </div>
   );
 }
-export default function App() { return <ThemeProvider><AuthProvider><Workspace /></AuthProvider></ThemeProvider>; }
+export default function App() {
+  if (window.location.pathname === '/privacy-policy') {
+    return <PrivacyPolicy />;
+  }
+
+  return (
+    <ThemeProvider>
+      <AuthProvider>
+        <Workspace />
+      </AuthProvider>
+    </ThemeProvider>
+  );
+}
